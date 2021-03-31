@@ -8,7 +8,7 @@ function App () {
       <header className="App-header">
         <h1>Welcome! { score }</h1>
       </header>
-        <button onClick={() => setScore(score + 1 )}>Click me</button>
+        <button onClick={() => setScore(prevScore => prevScore + 1 )}>Click me</button>
     </div>
   );
 }
